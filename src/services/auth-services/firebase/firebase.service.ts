@@ -5,12 +5,12 @@ import { initializeApp } from '@firebase/app';
 
 import { Auth, getAuth } from '@firebase/auth';
 import { getApps } from 'firebase-admin/app';
-import { IAuthServices } from 'src/common/interfaces';
 
 import firebaseSDK from 'firebase-sdk.json';
+import { AuthServices } from 'src/common/abstracts';
 
 @Injectable()
-export class FirebaseService implements IAuthServices, OnApplicationBootstrap {
+export class FirebaseService implements AuthServices, OnApplicationBootstrap {
   private auth: Auth;
   private appName: string;
   private firebaseApiKey: string;
