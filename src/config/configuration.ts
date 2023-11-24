@@ -8,4 +8,7 @@ export const configuration = () => ({
     PASSWORD: process.env.DATABASE_PASSWORD,
     DATABASE_NAME: process.env.DATABASE_NAME,
   },
+
+  FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
+  FIREBASE_APP_NAME: process.env.FIREBASE_APP_NAME,
 });
